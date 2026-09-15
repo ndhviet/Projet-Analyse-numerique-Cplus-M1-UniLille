@@ -27,7 +27,7 @@
     <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square">
   </a>
 
-  <a href="https://hoangviet1810.github.io/Projet-Analyse-numerique-Cplus-M1-UniLille/images/dashboard.html">
+  <a href="https://ndhviet.github.io/Projet-Analyse-numerique-Cplus-M1-UniLille/images/dashboard.html">
     <img src="https://img.shields.io/badge/Demo-Interactive_Dashboard-red?style=flat-square">
   </a>
 
@@ -159,6 +159,6 @@ project/
 
 ### Interactive Dashboard
 
-[![Dashboard](images/dashboard_analyse_numerique.png)](https://hoangviet1810.github.io/Projet-Analyse-numerique-Cplus-M1-UniLille/images/dashboard.html)
+[![Dashboard](images/dashboard_analyse_numerique.png)](https://ndhviet.github.io/Projet-Analyse-numerique-Cplus-M1-UniLille/images/dashboard.html)
 
 ➡️ Click on the image to open the interactive dashboard.
