@@ -100,25 +100,10 @@ Chaque dossier contient `src/` (code C++), `python/` (graphiques) et un `CMakeLi
 ➡️ Click on the image to open the interactive dashboard.
 
 
-
-
 Mise en œuvre en C++ de méthodes numériques pour la résolution d'équations aux dérivées partielles classiques, avec discrétisation par différences finies et résolution de systèmes linéaires.
 
 📄 [Rapport complet (PDF)](Project_Analyse_numerique_en_C__.pdf)
 
 ---
 
-## 2. Compilation et exécution
-
-**Prérequis :** CMake ≥ 3.10, un compilateur compatible C++17 (g++, clang++), Git et une connexion Internet (pour récupérer les dépendances la première fois).
-
-Pour chaque répertoire du projet :
-
-```bash
-mkdir build && cd build
-cmake ..
-cmake --build . --target run_all
-```
-
----
 
