@@ -43,12 +43,14 @@
 
 Ce projet présente la mise en œuvre de différentes méthodes numériques en C++ pour la résolution d’équations différentielles partielles classiques, avec discrétisation par différences finies et résolution de systèmes linéaires.
 
-## Introduction
+## 1. Introduction
 
-Présentation des objectifs du projet et du cadre général de l’analyse numérique appliquée avec le langage C++.
-Pour plus de détails, vous pouvez consulter le [fichier PDF](Project_Analyse_numerique_en_C__.pdf).
+Mise en œuvre en C++ de méthodes numériques pour la résolution d'équations aux dérivées partielles classiques, avec discrétisation par différences finies et résolution de systèmes linéaires.
 
-## Prérequis
+📄 [Rapport complet (PDF)](Project_Analyse_numerique_en_C__.pdf)
+
+
+## 2. Prérequis
 
 - CMake version >= 3.10
 - Compilateur C++ compatible C++17 (ex : g++, clang++)
@@ -62,18 +64,18 @@ cd build
 cmake ..
 cmake --build . --target run_all 
 ```
-##  Contenu du projet
+##  3. Contenu du projet
 
-### 1 Problème de Poisson 1D
+### 3.1 Problème de Poisson 1D
 Représentation des matrices sous forme profil, factorisation LDLᵗ et résolution du système associé. Tests numériques et graphiques pour vérifier la précision.
 
-### 2 Équation de la chaleur
+### 3.2 Équation de la chaleur
 Schémas explicite et implicite, avec conditions initiales et aux bords. Comparaison des schémas par simulations et représentations graphiques.
 
-### 3 Équation de Black–Scholes
+### 3.3 Équation de Black–Scholes
 Initialisation du problème, construction d'une matrice bande et résolution. Visualisation par graphes 2D, 3D et cartes thermiques (heat maps).
 
-### 4 Méthodes itératives pour matrices creuses : cuisson d'un gâteau
+### 3.4 Méthodes itératives pour matrices creuses : cuisson d'un gâteau
 Recherche du champ de température stationnaire d'un gâteau dans un four, à partir de la valeur connue des résistances électriques. On résout par différentes méthodes itératives le système linéaire `Ax = b` issu de la discrétisation par différences finies.
 
 ---
@@ -93,16 +95,11 @@ project/
 Chaque dossier contient `src/` (code C++), `python/` (graphiques) et un `CMakeLists.txt`.
 
 
-### Interactive Dashboard
+## 5. Interactive Dashboard
 
 [![Dashboard](images/dashboard_analyse_numerique.png)](https://ndhviet.github.io/Projet-Analyse-numerique-Cplus-M1-UniLille/images/dashboard.html)
 
 ➡️ Click on the image to open the interactive dashboard.
-
-
-Mise en œuvre en C++ de méthodes numériques pour la résolution d'équations aux dérivées partielles classiques, avec discrétisation par différences finies et résolution de systèmes linéaires.
-
-📄 [Rapport complet (PDF)](Project_Analyse_numerique_en_C__.pdf)
 
 ---
 
