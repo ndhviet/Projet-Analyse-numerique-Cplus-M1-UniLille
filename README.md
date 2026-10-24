@@ -43,16 +43,6 @@
 
 Ce projet présente la mise en œuvre de différentes méthodes numériques en C++ pour la résolution d’équations différentielles partielles classiques, avec discrétisation par différences finies et résolution de systèmes linéaires.
 
-## Table des Matières
-
-- [Introduction](#introduction)
-- [Prérequis](#prérequis)
-- [Résolution du problème de Poisson 1D](#résolution-du-problème-de-poisson-1d)
-- [Schémas numériques pour l’équation de la chaleur](#schémas-numériques-pour-l’équation-de-la-chaleur)
-- [Résolution de l’équation de Black–Scholes](#résolution-de-l’équation-de-black–scholes)
-- [Méthodes itératives pour les matrices creuses : Application à la température optimale d’un four pour la cuisson d’un gâteau](#méthodes-itératives-pour-les-matrices-creuses-application-à-la-température-optimale-d’un-four-pour-la-cuisson-d’un-gâteau)
-- [Structure](#structure)
-
 ## Introduction
 
 Présentation des objectifs du projet et du cadre général de l’analyse numérique appliquée avec le langage C++.
@@ -72,18 +62,18 @@ cd build
 cmake ..
 cmake --build . --target run_all 
 ```
-## 3. Contenu du projet
+##  Contenu du projet
 
-### 3.1 Problème de Poisson 1D
+### 1 Problème de Poisson 1D
 Représentation des matrices sous forme profil, factorisation LDLᵗ et résolution du système associé. Tests numériques et graphiques pour vérifier la précision.
 
-### 3.2 Équation de la chaleur
+### 2 Équation de la chaleur
 Schémas explicite et implicite, avec conditions initiales et aux bords. Comparaison des schémas par simulations et représentations graphiques.
 
-### 3.3 Équation de Black–Scholes
+### 3 Équation de Black–Scholes
 Initialisation du problème, construction d'une matrice bande et résolution. Visualisation par graphes 2D, 3D et cartes thermiques (heat maps).
 
-### 3.4 Méthodes itératives pour matrices creuses : cuisson d'un gâteau
+### 4 Méthodes itératives pour matrices creuses : cuisson d'un gâteau
 Recherche du champ de température stationnaire d'un gâteau dans un four, à partir de la valeur connue des résistances électriques. On résout par différentes méthodes itératives le système linéaire `Ax = b` issu de la discrétisation par différences finies.
 
 ---
