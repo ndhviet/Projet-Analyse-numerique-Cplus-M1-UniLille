@@ -72,31 +72,35 @@ cd build
 cmake ..
 cmake --build . --target run_all 
 ```
+## 3. Contenu du projet
 
-## Résolution du problème de Poisson 1D
+### 3.1 Problème de Poisson 1D
+Représentation des matrices sous forme profil, factorisation LDLᵗ et résolution du système associé. Tests numériques et graphiques pour vérifier la précision.
 
-Implémentation de la méthode numérique pour résoudre l’équation de Poisson en une dimension.
-Le projet aborde la représentation des matrices sous forme profil, la factorisation LDLᵗ et la résolution du système associé.
-Des tests numériques et des graphiques sont réalisés pour vérifier la précision des résultats. 
+### 3.2 Équation de la chaleur
+Schémas explicite et implicite, avec conditions initiales et aux bords. Comparaison des schémas par simulations et représentations graphiques.
 
-## Schémas numériques pour l’équation de la chaleur
+### 3.3 Équation de Black–Scholes
+Initialisation du problème, construction d'une matrice bande et résolution. Visualisation par graphes 2D, 3D et cartes thermiques (heat maps).
 
-Étude des méthodes explicite et implicite pour la résolution de l’équation de la chaleur.
-Les conditions initiales et aux bords sont définies, puis les schémas sont comparés à travers des simulations, vérifications et représentations graphiques des résultats.
+### 3.4 Méthodes itératives pour matrices creuses : cuisson d'un gâteau
+Recherche du champ de température stationnaire d'un gâteau dans un four, à partir de la valeur connue des résistances électriques. On résout par différentes méthodes itératives le système linéaire `Ax = b` issu de la discrétisation par différences finies.
 
-## Résolution de l’équation de Black–Scholes
+---
 
-Application des méthodes numériques au modèle de Black–Scholes en finance.
-Le projet comprend l’initialisation du problème, la construction d’une matrice bande, la mise en œuvre d’un algorithme de résolution simplifié, et la visualisation des résultats à l’aide de graphes 2D, 3D et de cartes thermiques (heat maps).
+## 4. Structure
 
-## Méthodes itératives pour les matrices creuses : Application à la température optimale d’un four pour la cuisson d’un gâteau
-On étudie dans ce projet le champ de température d’un gâteau à cuire dans un four à partir
-de la valeur connue des résistences électriques. On suppose le phénomène stationnaire, c’est-à-dire
-indépendant du temps (c’est le cas quand le four est arrivé à la température imposée avec le gâteau
-à cuir déjà à l’intérieur du four). Le but du projet est la résolution par diverses méthodes itératives
-du système linéaire Ax = b qui provient de la discrétisation par différences finies des équations
-definissant notre problème.
+```text
+project/
+|-- Poisson/           # Poisson 1D
+|-- Schema_Numerique/  # Équation de la chaleur
+|-- Black-Scholes/     # Équation de Black–Scholes
+|-- Laplacien/         # Matrices creuses / méthodes itératives
+|-- .gitignore
+└── README.md
+```
 
+Chaque dossier contient `src/` (code C++), `python/` (graphiques) et un `CMakeLists.txt`.
 
 
 ### Interactive Dashboard
