@@ -97,65 +97,7 @@ indépendant du temps (c’est le cas quand le four est arrivé à la températu
 du système linéaire Ax = b qui provient de la discrétisation par différences finies des équations
 definissant notre problème.
 
-# Structure
-```text
-project/
-|-- .gitignore
-|-- Black-Scholes/
-|   └── src/
-|       |--Black_Scholes.cpp
-|       |--Black_Scholes.h
-|       |--main.cpp
-|       |--vecteur_template.h
-|   └── python/
-|       |--graph1.py
-|       |--graph2.py
-|       |--run_graphs.py
-|   CMakeLists.txt
-|
-|-- Laplacien/
-|   └── src/
-|       |--main_inverse.cpp
-|       |--main.cpp
-|       |--main2.cpp
-|       |--matrice.cpp
-|       |--matrice.h
-|       |--matricebande.cpp
-|       |--matricebande.h
-|       |--test
-|   └── python/
-|       |--graph.py
-|       |--graph1.py
-|       |--graph2.py
-|       |--graph3.py
-|       |--graph4.py
-|       |--run_graphs.py
-|   CMakeLists.txt
-|
-|-- Poisson/
-|   └── src/
-|       |--main.cpp
-|       |--Poisson.cpp
-|       |--Poisson.h
-|   └── python/
-|       |--graph1.py
-|       |--graph2.py
-|       |--run_graphs.py
-|   CMakeLists.txt
-|  
-|-- Schema_Numerique/
-|   └── src/
-|       |--main.cpp
-|       |--Schema_Numerique.cpp
-|       |--Schema_Numerique.h
-|   └── python/
-|       |--graph1.py
-|       |--graph2.py
-|       |--run_graphs.py
-|   CMakeLists.txt
-|
-└── README.md
-```
+
 
 ### Interactive Dashboard
 
