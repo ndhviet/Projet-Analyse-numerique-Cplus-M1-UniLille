@@ -163,6 +163,7 @@ project/
 
 ➡️ Click on the image to open the interactive dashboard.
 
+
 <div align="center">
   <h1>Projet d'Analyse Numérique en C++</h1>
   <p><em>M1 — Université de Lille | Résolution numérique d'EDP classiques</em></p>
